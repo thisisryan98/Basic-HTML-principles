@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 4 HTML Assignment</title>
+  <!-- Used to style elements the corresponding sections of the webpage -->
+  <style>
+/* Border-Box accounts for padding */
+header {
+  background-color: #5abaff;
+  width: 100%;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+/* Float allows for columns */
+section {
+  float: left;
+  background-color: #b1e9ff;
+  width: 50%;
+  height: 200px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 5px solid black;
+}
+article {
+  float: right;
+  text-align: center;
+  background-color: #b1e9ff;
+  width: 50%;
+  height: 200px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 5px solid black
+}
+
+/* Footer at 100% width */
+footer {
+  background-color: #5abaff;
+  width: 100%;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  clear: both; 
+  /* clears floats */
+}
+body {
+  margin: 0
+}
+  </style>
+  </head>
+<body style="background-color: seashell;">
+  <header>
+    <h1 style="text-align:center; font-size:400%;">The Completely Legitmate Streaming Service</h1>
+      <h2>We offer everything and all we need is your information</h2>
+        <img style="margin-top: -50px; margin-left: -12px;" src = "https://upload.wikimedia.org/wikipedia/commons/1/18/Cartoon_Mobile_Tablet_Streaming_A_Video_Online.svg" alt = "https://placehold.co/300x200">
+          <div style ="border: 5px solid black; background-color: white; padding: 5px; width: 250px; margin: 0 auto; border-radius: 10px; margin-top: -50px; text-align: center;">
+            <nav>
+              <h4 style="margin-top: 3px;margin-left:-4px">Pages</h4>
+              <ul style="margin-right: -10px; padding: 0; margin-top: -15px; margin-bottom: 3px;">
+                <li style="display:inline; margin-right: 10px;"><a href="home.html">Home</a></li>
+                <li style="display: inline; margin-right: 10px;"><a href="about.html">About</a></li>
+                <li style="display: inline; margin-right: 2px;"><a href="contact.html">Contact</a></li>
+                <br>
+              </ul>
+            </nav>
+          </div>
+  </header>
+  <main>
+    <!-- Left "column" -->
+    <section>
+      <h1 style = "text-align: center;">Welcome to Our Legitmate Service!</h1>
+        <p style = "text-align: center; margin-left:100px;margin-right:100px;">Welcome to Completely Legitimate Streaming Service, where we have “everything." If it exists, you can stream it. If it does not, we have a team who will create something similar enough. We are as real as it gets.</p>
+    </section>
+
+    <!-- Right "column" -->
+    <article>
+        <h1>Our Real Supscription Models are Listed Below:</h1>
+          <figure>
+            <table style="background-color: #ffffff; margin: 0 auto; border: 2px solid black;">
+              <tr >
+                <th style="border: 1px solid black;">Free</th>
+                <th style="border: 1px solid black;">Standard ($5.99 a month)</th>
+                <th style="border: 1px solid black;">Premium ($14.99 a month)</th>
+              </tr>
+              <tr>
+                <td>Ads</td>
+                <td>Ads</td>
+                <td>No Ads</td>
+              </tr>
+              <tr>
+                <td>1080p streaming</td>
+                <td>4k streaming</td>
+                <td>4k streaming</td>
+              </tr>
+              <tr>
+                <td>No downloads</td>
+                <td>1080p Downloads</td>
+                <td>4k Downloads</td>
+              </tr>
+            </table>
+          </figure>
+      </article>
+
+    <footer>
+      <h1>If you'd like to make an account, fill out our form below and we will email you with next steps:</h1>
+        <form action="#" method="POST">
+          <fieldset style = "background-color: #b1e9ff; border: solid 5px black">
+            <h1>Create Account</h1>
+
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your name">
+              <br><br>
+
+              <label for="user-birthdate">Birth Date:</label>
+              <input type="date" id="user-birthdate" name="birthdate" required>
+              <br><br>
+
+              <label>Gender:</label>
+              <input type="radio" id="male" name="gender" value="male">
+              <label for="male" style="margin-right: 20px;">Male</label>
+
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female" style="margin-right: 20px;">Female</label>
+
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other" style="margin-right: 20px;">Other</label>
+
+              <input type="radio" id="prefer_no" name="gender" value="prefer to not say">
+              <label for="prefer_no" style="margin-right: 20px;">Prefer not to answer</label>
+              <br><br>
+
+              <label for="user-email">Email:</label>
+              <input type="email" id="user-email" name="email" required placeholder="Enter your email">
+              <br><br>
+
+              <label for="user-password">Create Password:</label>
+              <input type="password" id="user-password" name="password" required placeholder="Enter your password">
+              <br><br>
+
+              <label for="user-password-confirm">Re-Enter Password:</label>
+              <input type="password" id="user-password-confirm" name="password_confirm" required placeholder="Confirm your password">
+              <br><br>
+
+              <input type="submit" value="Submit">
+          </fieldset>
+        </form>
+    </footer>
+  </main>
+</body>
+</html>
